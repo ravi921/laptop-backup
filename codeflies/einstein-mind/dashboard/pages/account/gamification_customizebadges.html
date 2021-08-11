@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../dist/img/favicon.ico" type="image" sizes="16x16">
+  <title>Account & Settings</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../../dist/css/local.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <div class="container">
+      <!-- Left navbar links -->
+      <a href="../../index.html" class="brand-link">
+        <img src="../../dist/img/em-logo.png" alt="Logo" class="brand-image">
+      </a>
+
+      <div class="mobile-toggle" id="togglemenu">
+        <i class="fa fa-bars"></i>
+      </div>
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown">
+            <span class="user-name" title="">John Doe</span> Administrator <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item bg-grey">
+              <div class="icheck-success d-inline">
+                <input type="radio" name="r3" checked="" id="radioSuccess1">
+                <label for="radioSuccess1">
+                </label>
+              </div> Administrator
+            </a>
+            <a href="#" class="dropdown-item bg-grey">
+              <div class="icheck-success d-inline">
+                <input type="radio" name="r3" id="radioSuccess2">
+                <label for="radioSuccess2">
+                </label>
+              </div> Instructor
+            </a>
+            <a href="#" class="dropdown-item bg-grey">
+              <div class="icheck-success d-inline">
+                <input type="radio" name="r3" id="radioSuccess2">
+                <label for="radioSuccess2">
+                </label>
+              </div> Learner
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="../info/userinfo.html" class="dropdown-item">
+              <i class="fas fa-address-card mr-2"></i> My info
+            </a>
+            <a href="courses.html" class="dropdown-item">
+              <i class="fas fa-book mr-2"></i> My courses
+            </a>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-certificate mr-2"></i> My certifications
+            </a>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-server mr-2"></i> My progress
+            </a>
+            <a href="../groups/groups.html" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> My groups
+            </a>
+            <a href="../branches/branches.html" class="dropdown-item">
+              <i class="fas fa-sitemap mr-2"></i> MY Branches
+            </a>
+            <a href="../files/files.html" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> MY Files
+            </a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown">Go To 
+            <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="../../index.html" class="dropdown-item">
+              <i class="fas fa-home mr-2"></i> Home
+            </a>
+            <a href="../user-list.html" class="dropdown-item">
+              <i class="fas fa-user mr-2"></i> Users
+            </a>
+            <a href="../course/course-list.html" class="dropdown-item">
+              <i class="fas fa-book mr-2"></i> Courses
+            </a>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-cart-arrow-down mr-2"></i> Course Store
+            </a>
+            <a href="../categories/category-list.html" class="dropdown-item">
+              <i class="fas fa-server mr-2"></i> Categories
+            </a>
+            <a href="../group/group-list.html" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> Groups
+            </a>
+            <a href="../branches/branches-list.html" class="dropdown-item">
+              <i class="fas fa-sitemap mr-2"></i> Branches
+            </a>
+            <a href="../report/reports.html" class="dropdown-item">
+              <i class="fas fa-chart-pie mr-2"></i> Reports
+            </a>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-sync mr-2"></i> Import - Export
+            </a>
+            <a href="../eventsengine/notification_index.html" class="dropdown-item">
+              <i class="fas fa-clock mr-2"></i> Events engine
+            </a>
+            <a href="basic_index.html" class="dropdown-item">
+              <i class="fas fa-sliders-h mr-2"></i> Account & Settings
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="../user/create.html" class="dropdown-item dropdown-footer"><i class="fas fa-plus-circle mr-2"></i> Add user</a>
+            <a href="../course/create.html" class="dropdown-item dropdown-footer"><i class="fas fa-plus-circle mr-2"></i> Add course</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-link">Message 
+            <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="../message/create.html" class="dropdown-item">
+              <i class="fas fa-inbox mr-2"></i> Go to Inbox
+            </a>
+            <a href="../message/create.html" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> Send message
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">No messages</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown nav-item-help mobile-none">
+          <a href="#" class="nav-link">Help <i class="fa fa-angle-down"></i></a>
+          <div class="dropdown-menu dropdown-help dropdown-menu-right">
+            <div class="row">
+              <div class="col-5 col-sm-4">
+                <div class="nav flex-column nav-tabs " id="vert-tabs-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active" id="base-tabs-tab" data-toggle="pill" href="#base-tabs" role="tab" aria-controls="base-tabs" aria-selected="true">Knowledge base </a>
+                  <a class="nav-link" id="quick-tabs-tab" data-toggle="pill" href="#quick-tabs" role="tab" aria-controls="quick-tabs-tab" aria-selected="false">Quick guide</a>
+                  <a class="nav-link" id="tour-tabs-tab" data-toggle="pill" href="#tour-tabs" role="tab" aria-controls="tour-tabs-tab"  aria-selected="false">Tour</a>
+                  <a class="nav-link" id="videos-tabs-tab" data-toggle="pill" href="#videos-tabs" role="tab" aria-controls="videos-tabs-tab"  aria-selected="false">Videos</a>
+                  <a class="nav-link" id="support-tabs-tab" data-toggle="pill" href="#support-tabs" role="tab" aria-controls="support-tabs" aria-selected="false">Contact support</a>
+                  <a class="nav-link" id="live-tabs-tab" data-toggle="pill" href="#live-tabs" role="tab" aria-controls="live-tabs" aria-selected="false">Live support</a>
+                </div>
+              </div>
+              <div class="col-7 col-sm-8">
+                <div class="tab-content" id="vert-tabs-tabContent">
+                  <div class="tab-pane fade show active" id="base-tabs" role="tabpanel" aria-labelledby="base-tabs-tab">
+                    <div class="help-tab-search-box">
+                      <div class="search-box-head">
+                        <input class="form-control" type="search" placeholder="Search Knowledge base" aria-label="Search">
+                      </div>
+                      <div class="search-box-body">
+                        <ul id="help_tab_links" class="help_tab_links">
+                          <li>
+                            <div>
+                              <a href="#" target="_blank">
+                                <h2>Getting started with TalentLMS</h2>
+                              </a>
+                              <p>To <em>get</em> things moving, let’s walk you through your first steps and point you to a few useful resources along the way.</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                              <a href="#" target="_blank"><h2>How to set prerequisites for a course</h2></a>
+                              <p>with eLearning” and “Content and TalentLMS”, then choose “<em>Getting</em> <em>Started</em> with eLearning” and “Content and TalentLMS” as</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                              <a href="#" target="_blank"><h2>How to use Postman to generate TalentLMS API code snippets in various programming languages</h2></a>
+                              <p>You can click the bellow button to <em>get</em> <em>started</em> with Postman and our collection: ► Run in Postman</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                              <a href="#" target="_blank"><h2>How to work with the training matrix report</h2></a>
+                              <p>Light blue: the user has not <em>started</em></p>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                              <a href="#" target="_blank"><h2>How to configure SCIM with Azure AD</h2></a>
+                              <p>Click Provision from the left-side menu and then <em>Get</em> <em>started</em>.</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                              <a href="#" target="_blank"><h2>How to set up your Stripe payment gateway</h2></a>
+                              <p>You can now <em>start</em> <em>getting</em> paid through Stripe's secure payment gateway.</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                              <a href="#" target="_blank"><h2>How to configure SSO with Okta</h2></a>
+                              <p>To <em>get</em> <em>started</em>, you need an Okta account to handle the sign-in process and provide your users’ credentials to TalentLMS.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="search-box-foot">
+                        <a href="#" class="btn btn-primary" target="_blank">Go to knowledge base</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="quick-tabs" role="tabpanel" aria-labelledby="quick-tabs-tab">
+                    <div class="header-quick-content">
+                      <img src="../../dist/img/ES_QuickGuide.svg" />
+                      <p>An overview of basic functionality</p>
+                      <a href="#" class="btn btn-primary">View quick guide</a>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tour-tabs" role="tabpanel" aria-labelledby="tour-tabs-tab">
+                    <div class="header-tour-content">
+                      <img src="../../dist/img/ES_Tour.svg" />
+                      <p>Restart the guided tour</p>
+                      <a href="#" class="btn btn-primary">Restart tour</a>
+                    </div> 
+                  </div>
+                  <div class="tab-pane fade" id="videos-tabs" role="tabpanel" aria-labelledby="videos-tabs-tab">
+                    <div class="header-video-content">
+                      <img src="../../dist/img/ES_Videos.svg" />
+                      <p>A vast collection of introductory videos</p>
+                      <a href="#" class="btn btn-primary">View videos</a>
+                    </div> 
+                  </div>
+                  <div class="tab-pane fade" id="support-tabs" role="tabpanel" aria-labelledby="support-tabs-tab">
+                    <div class="help-support-content">
+                      <form>
+                        <div class="form-group">
+                          <input class="form-control" type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                          <textarea class="form-control" rows="4" placeholder="Give us your feedback or ask for help"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="exampleInputFile">
+                              <label class="custom-file-label" for="exampleInputFile">Upload a file</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-right">
+                          <button type="submit" class="btn btn-primary">Next</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="live-tabs" role="tabpanel" aria-labelledby="live-tabs-tab">
+                    <div class="header-live-content">
+                      <img src="../../dist/img/LIVE_SUPPORT.svg" />
+                      <p>Live support is only available on Premium plans</p>
+                      <a href="#" class="btn btn-primary">Upgrade</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item mobile-none">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li class="nav-item dropdown mobile-none">
+          <a href="../../login.html" class="nav-link"><i class="fas fa-sign-out-alt"></i></a>
+        </li>
+        <li class="nav-item dropdown desktop-none">
+          <a href="../../login.html" class="nav-link">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Account & Settings</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+              <li class="breadcrumb-item active">Account & Settings</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content gamification-content pb-3">
+      <div class="container">
+        <div class="card card-primary">
+          <div class="card-header">
+            <h3 class="card-title">Account & Settings</h3>
+          </div>
+          <!-- /.card-header -->
+          <!-- form start -->
+          <form>
+            <div class="card-body pl-0 pr-0">
+              <nav class="navbar navbar-expand p-0">
+                <ul class="nav nav-tabs mb-0 br-0 pl-0" role="tablist">
+                  <li class="nav-item"><a class="nav-link" href="basic_index.html">Notifications</a></li>
+                  <li class="nav-item"><a class="nav-link" href="cms_index.html">Homepage</a></li>
+                  <li class="nav-item"><a class="nav-link" href="users_index.html">Users</a></li>
+                  <li class="nav-item"><a class="nav-link" href="themes_index.html">Themes</a></li>
+                  <li class="nav-item"><a class="nav-link" href="certifications_index.html">Certifications</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="gamification_index.html">Gamification</a></li>
+                  <li class="nav-item"><a class="nav-link" href="ecommerce_index.html">E-commerce</a></li>
+                  <li class="nav-item"><a class="nav-link" href="domain_index.html">Domain</a></li>
+                  <li class="nav-item"><a class="nav-link" href="subscription_index.html">Subscription</a></li>
+                </ul>
+              </nav>
+              <div class="dropdown-divider mt-0 mb-3"></div>
+              <div class="gamification-sec p-3">
+                <div class="card-tbl-head mb-3">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <i class="fa fa-info-circle"></i> Click on any badge to modify it. The image must be 200X200 pixels.
+                    </div>
+                    <div class="col-sm-6 text-right mobile-none input-group">
+                      Choose your default set &nbsp; <select class="form-control select2">
+                              <option selected="selected">Old School</option>
+                              <option>Sticker</option>
+                              <option>Evolution</option>
+                            </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="userreport-badges-content">
+                  <h6 class="bg-grey p-3">ACTIVITY BADGES</h6>
+                  <div class="badge-list activity-list">
+                    <ul>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-activity-1"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt mobile-none"><strong>Activity Newbie</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para mobile-none">(4 logins)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-activity-2"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt mobile-none"><strong>Activity Grower</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para mobile-none">(8 logins)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-activity-3"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt mobile-none"><strong>Activity Adventurer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para mobile-none">(16 logins)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-activity-4"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt mobile-none"><strong>Activity Explorer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para mobile-none">(32 logins)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-activity-5"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt mobile-none"><strong>Activity Star</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para mobile-none">(64 logins)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-activity-6"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt mobile-none"><strong>Activity Superstar</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para mobile-none">(128 logins)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-activity-7"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt mobile-none"><strong>Activity Master</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para mobile-none">(256 logins)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-activity-8"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt mobile-none"><strong>Activity Grandmaster</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para mobile-none">(512 logins)</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <h6 class="bg-grey p-3 mb-3">LEARNING BADGES</h6>
+                  <div class="badge-list activity-list">
+                    <ul>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-learning-1"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Learning Newbie</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(1 completed course)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-learning-2"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Learning Grower</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(2 completed course)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-learning-3"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Learning Adventurer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(4 completed course)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-learning-4"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Learning Explorer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(8 completed course)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-learning-5"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Learning Star</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(16 completed course)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-learning-6"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Learning Superstar</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(32 completed course)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-learning-7"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Learning Master</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(64 completed course)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-learning-8"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Learning Grandmaster</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(128 completed course)</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <h6 class="bg-grey p-3 mb-3">TEST BADGES</h6>
+                  <div class="badge-list activity-list">
+                    <ul>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-test-1"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Test Newbie</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(2 passed tests)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-test-2"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Test Grower</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(4 passed tests)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-test-3"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Test Adventurer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(8 passed tests)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-test-4"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Test Explorer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(16 passed tests)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-test-5"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Test Star</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(32 passed tests)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-test-6"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Test Superstar</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(64 passed tests)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-test-7"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Test Master</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(128 passed tests)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-test-8"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Test Grandmaster</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(256 passed tests)</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <h6 class="bg-grey p-3 mb-3">ASSIGNMENT BADGES</h6>
+                  <div class="badge-list activity-list">
+                    <ul>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-assignment-1"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Assignment Newbie</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(1 passed assignments)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-assignment-2"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Assignment Grower</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(2 passed assignments)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-assignment-3"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Assignment Adventurer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(4 passed assignments)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-assignment-4"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Assignment Explorer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(8 passed assignments)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-assignment-5"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Assignment Star</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(16 passed assignments)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-assignment-6"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Assignment Superstar</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(32 passed assignments)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-assignment-7"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Assignment Master</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(64 passed assignments)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-assignment-8"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Assignment Grandmaster</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(128 passed assignments)</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <h6 class="bg-grey p-3 mb-3">PERFECTIONISM BADGES</h6>
+                  <div class="badge-list activity-list">
+                    <ul>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-perfectionism-1"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Perfectionism Newbie</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(1 passed tests or assignments with score 90%+)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-perfectionism-2"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Perfectionism Grower</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(2 passed tests or assignments with score 90%+)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-perfectionism-3"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Perfectionism Adventurer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(4 passed tests or assignments with score 90%+)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-perfectionism-4"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Perfectionism Explorer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(8 passed tests or assignments with score 90%+)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-perfectionism-5"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Perfectionism Star</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(16 passed tests or assignments with score 90%+)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-perfectionism-6"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Perfectionism Superstar</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(32 passed tests or assignments with score 90%+)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-perfectionism-7"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Perfectionism Master</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(64 passed tests or assignments with score 90%+)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-perfectionism-8"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Perfectionism Grandmaster</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(128 passed tests or assignments with score 90%+)</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <h6 class="bg-grey p-3 mb-3">SURVEY BADGES</h6>
+                  <div class="badge-list activity-list">
+                    <ul>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-survey-1"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Survey Newbie</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(1 completed survey)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-survey-2"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Survey Grower</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(2 completed survey)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-survey-3"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Survey Adventurer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(4 completed survey)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-survey-4"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Survey Explorer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(8 completed survey)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-survey-5"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Survey Star</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(16 completed survey)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-survey-6"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Survey Superstar</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(32 completed survey)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-survey-7"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Survey Master</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(64 completed survey)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-survey-8"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Survey Grandmaster</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(128 completed survey)</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <h6 class="bg-grey p-3 mb-3">COMMUNICATION BADGES</h6>
+                  <div class="badge-list activity-list">
+                    <ul>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-communication-1"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Communication Newbie</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(2 discussion topics or comments)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-communication-2"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Communication Grower</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(4 discussion topics or comments)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-communication-3"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Communication Adventurer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(8 discussion topics or comments)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-communication-4"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Communication Explorer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(16 discussion topics or comments)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-communication-5"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Communication Star</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(32 discussion topics or comments)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-communication-6"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Communication Superstar</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(64 discussion topics or comments)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-communication-7"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Communication Master</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(128 discussion topics or comments)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-communication-8"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Communication Grandmaster</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(256 discussion topics or comments)</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <h6 class="bg-grey p-3 mb-3">CERTIFICATION BADGES</h6>
+                  <div class="badge-list activity-list">
+                    <ul>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-certification-1"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Certification Newbie</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(1 certifications)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-certification-2"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Certification Grower</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(2 certifications)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-certification-3"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Certification Adventurer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(4 certifications)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-certification-4"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Certification Explorer</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(8 certifications)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-certification-5"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Certification Star</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(16 certifications)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-certification-6"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Certification Superstar</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(32 certifications)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-certification-7"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Certification Master</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(64 certifications)</div>
+                      </li>
+                      <li class="badge-list-box">
+                        <div class="badge-gr-img badge-certification-8"><img src="../../dist/img/download-badges.png"></div>
+                        <div class="badge-list-txt"><strong>Certification Grandmaster</strong> <i class="fa fa-pen txt-edit"></i></div>
+                        <div class="badge-list-para">(128 certifications)</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Tabs end -->
+            </div>
+            <!-- /.card-body -->
+          </form>
+        </div>
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="container">Copyright &copy; 2021. All rights reserved.</div>
+  </footer>
+
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap Switch -->
+<script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<!-- BS-Stepper -->
+<script src="../../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+<!-- dropzonejs -->
+<script src="../../plugins/dropzone/min/dropzone.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<script src="../../dist/js/local.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    
+    $("input[data-bootstrap-switch]").each(function(){
+      $(this).bootstrapSwitch('state', $(this).prop('checked'));
+    })
+
+  });
+
+jQuery(document).ready(function(){
+  jQuery('.DateCheckbox .bootstrap-switch-wrapper').click(function(){
+    console.log('click');
+
+      if (jQuery('.DateCheckbox input[type=checkbox]').is(':checked')) {
+          jQuery("div#Datebox").show();
+      } else {
+          jQuery("div#Datebox").hide();
+      }
+
+  });
+});
+
+  // BS-Stepper Init
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   window.stepper = new Stepper(document.querySelector('.bs-stepper'))
+  // })
+
+  // DropzoneJS Demo Code Start
+  //Dropzone.autoDiscover = false
+
+  // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
+  // var previewNode = document.querySelector("#template")
+  // previewNode.id = ""
+  // var previewTemplate = previewNode.parentNode.innerHTML
+  // previewNode.parentNode.removeChild(previewNode)
+
+  // var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
+  //   url: "/target-url", // Set the url
+  //   thumbnailWidth: 80,
+  //   thumbnailHeight: 80,
+  //   parallelUploads: 20,
+  //   previewTemplate: previewTemplate,
+  //   autoQueue: false, // Make sure the files aren't queued until manually added
+  //   previewsContainer: "#previews", // Define the container to display the previews
+  //   clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
+  // })
+
+  // myDropzone.on("addedfile", function(file) {
+  //   // Hookup the start button
+  //   file.previewElement.querySelector(".start").onclick = function() { myDropzone.enqueueFile(file) }
+  // })
+
+  // Update the total progress bar
+  // myDropzone.on("totaluploadprogress", function(progress) {
+  //   document.querySelector("#total-progress .progress-bar").style.width = progress + "%"
+  // })
+
+  // myDropzone.on("sending", function(file) {
+  //   // Show the total progress bar when upload starts
+  //   document.querySelector("#total-progress").style.opacity = "1"
+  //   // And disable the start button
+  //   file.previewElement.querySelector(".start").setAttribute("disabled", "disabled")
+  // })
+
+  // Hide the total progress bar when nothing's uploading anymore
+  // myDropzone.on("queuecomplete", function(progress) {
+  //   document.querySelector("#total-progress").style.opacity = "0"
+  // })
+
+  // Setup the buttons for all transfers
+  // The "add files" button doesn't need to be setup because the config
+  // `clickable` has already been specified.
+  // document.querySelector("#actions .start").onclick = function() {
+  //   myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED))
+  // }
+  // document.querySelector("#actions .cancel").onclick = function() {
+  //   myDropzone.removeAllFiles(true)
+  // }
+  // DropzoneJS Demo Code End
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/*
+Theme Name: Resideo Child
+Theme URI: http://pixelprime.co/themes/resideo-wp/
+Template: resideo
+Description: Resideo Child Theme
+Version: 2.3
+Author: Pixel Prime
+Author URI: http://pixelprime.co/
+Text Domain: resideo
+Tags: black, white, light, four-columns, responsive-layout, custom-colors, custom-header, custom-menu, featured-image-header, full-width-template, sticky-post, theme-options, translation-ready, threaded-comments
+License: 
+License URI: 
+*/
+
+/* 7-june-2021 Start  */
+
+/* .pxp-header{
+    background-color:#000;
+    border-bottom:3px solid #cc915c;
+} */
+
+/* 7-june-2021 End */
+
+/* 9-june-2021 Start */
+
+.pxp-footer .widget_media_image a {
+	display:block;
+	max-width:200px;
+}
+
+@media(min-width:768px){
+	.property-listing-details{
+		text-align:right;
+	}
+}
+
+/* 9-june-2021 End */
+
+/* 6-aug-2021 Start */
+
+.pxp-nav > div > ul > li > a::after{
+	display:none;
+}
+
+.pxp-nav > div > ul > li > a:hover{
+	color:#cc915c !important;
+}
+
+.pxp-nav > div > ul > li.current_page_item > a {
+	color: #cc915c !important;
+}
+
+.pxp-dark-mode .pxp-is-sticky .pxp-nav > div > ul > li.current_page_item > a {
+	color: #cc915c;
+}
+
+.pxp-header.pxp-no-bg, 
+body.pxp-dark-mode .pxp-header.pxp-no-bg,
+.pxp-header.fixed-top{
+	background-color: #000;
+	border-bottom: 3px solid #cc915c;
+	padding: 30px 0;
+}
+
+.pxp-header.pxp-no-bg.pxp-is-sticky, 
+body.pxp-dark-mode .pxp-header.pxp-no-bg.pxp-is-sticky,
+.pxp-header.fixed-top.pxp-is-sticky{
+	padding:20px 0;
+}
+
+.about_heading{
+	font-weight:bold;
+}
+
+.about_subheading {
+	color: #6C6C6C;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+#post-269 .pxp-testim-1-intro .pxp-section-h2{
+	color:#fff;
+}
+
+#post-269 .pxp-testim-1-intro p{
+	font-size:18px;
+	opacity: 0.9;
+}
+/* 6-aug-2021 End */
+
+

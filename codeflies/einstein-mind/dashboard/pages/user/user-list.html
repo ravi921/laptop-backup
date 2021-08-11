@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../dist/img/favicon.ico" type="image" sizes="16x16">
+  <title>User</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../../dist/css/local.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <div class="container">
+      <!-- Left navbar links -->
+      <a href="../../index.html" class="brand-link">
+        <img src="../../dist/img/em-logo.png" alt="Logo" class="brand-image">
+      </a>
+
+      <div class="mobile-toggle" id="togglemenu">
+        <i class="fa fa-bars"></i>
+      </div>
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown">
+            <span class="user-name" title="">John Doe</span> Administrator <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item bg-grey">
+              <div class="icheck-success d-inline">
+                <input type="radio" name="r3" checked="" id="radioSuccess1">
+                <label for="radioSuccess1">
+                </label>
+              </div> Administrator
+            </a>
+            <a href="#" class="dropdown-item bg-grey">
+              <div class="icheck-success d-inline">
+                <input type="radio" name="r3" id="radioSuccess2">
+                <label for="radioSuccess2">
+                </label>
+              </div> Instructor
+            </a>
+            <a href="#" class="dropdown-item bg-grey">
+              <div class="icheck-success d-inline">
+                <input type="radio" name="r3" id="radioSuccess2">
+                <label for="radioSuccess2">
+                </label>
+              </div> Learner
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="info/userinfo.html" class="dropdown-item">
+              <i class="fas fa-address-card mr-2"></i> My info
+            </a>
+            <a href="courses/courses.html" class="dropdown-item">
+              <i class="fas fa-book mr-2"></i> My courses
+            </a>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-certificate mr-2"></i> My certifications
+            </a>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-server mr-2"></i> My progress
+            </a>
+            <a href="groups/groups.html" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> My groups
+            </a>
+            <a href="branches/branches.html" class="dropdown-item">
+              <i class="fas fa-sitemap mr-2"></i> MY Branches
+            </a>
+            <a href="files/files.html" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> MY Files
+            </a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown">Go To 
+            <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="../../index.html" class="dropdown-item">
+              <i class="fas fa-home mr-2"></i> Home
+            </a>
+            <a href="user-list.html" class="dropdown-item">
+              <i class="fas fa-user mr-2"></i> Users
+            </a>
+            <a href="../course/course-list.html" class="dropdown-item">
+              <i class="fas fa-book mr-2"></i> Courses
+            </a>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-cart-arrow-down mr-2"></i> Course Store
+            </a>
+            <a href="../category/category-list.html" class="dropdown-item">
+              <i class="fas fa-server mr-2"></i> Categories
+            </a>
+            <a href="../group/group-list.html" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> Groups
+            </a>
+            <a href="../branches/branches-list.html" class="dropdown-item">
+              <i class="fas fa-sitemap mr-2"></i> Branches
+            </a>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-chart-pie mr-2"></i> Reports
+            </a>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-sync mr-2"></i> Import - Export
+            </a>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-clock mr-2"></i> Events engine
+            </a>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-sliders-h mr-2"></i> Account & Settings
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="create.html" class="dropdown-item dropdown-footer"><i class="fas fa-plus-circle mr-2"></i> Add user</a>
+            <a href="../course/create.html" class="dropdown-item dropdown-footer"><i class="fas fa-plus-circle mr-2"></i> Add course</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-link">Message 
+            <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-inbox mr-2"></i> Go to Inbox
+            </a>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> Send message
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">No messages</a>
+          </div>
+        </li>
+         <li class="nav-item dropdown nav-item-help mobile-none">
+          <a href="#" class="nav-link">Help <i class="fa fa-angle-down"></i></a>
+          <div class="dropdown-menu dropdown-help dropdown-menu-right">
+            <div class="row">
+              <div class="col-5 col-sm-4">
+                <div class="nav flex-column nav-tabs " id="vert-tabs-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active" id="base-tabs-tab" data-toggle="pill" href="#base-tabs" role="tab" aria-controls="base-tabs" aria-selected="true">Knowledge base </a>
+                  <a class="nav-link" id="quick-tabs-tab" data-toggle="pill" href="#quick-tabs" role="tab" aria-controls="quick-tabs-tab" aria-selected="false">Quick guide</a>
+                  <a class="nav-link" id="tour-tabs-tab" data-toggle="pill" href="#tour-tabs" role="tab" aria-controls="tour-tabs-tab"  aria-selected="false">Tour</a>
+                  <a class="nav-link" id="videos-tabs-tab" data-toggle="pill" href="#videos-tabs" role="tab" aria-controls="videos-tabs-tab"  aria-selected="false">Videos</a>
+                  <a class="nav-link" id="support-tabs-tab" data-toggle="pill" href="#support-tabs" role="tab" aria-controls="support-tabs" aria-selected="false">Contact support</a>
+                  <a class="nav-link" id="live-tabs-tab" data-toggle="pill" href="#live-tabs" role="tab" aria-controls="live-tabs" aria-selected="false">Live support</a>
+                </div>
+              </div>
+              <div class="col-7 col-sm-8">
+                <div class="tab-content" id="vert-tabs-tabContent">
+                  <div class="tab-pane fade show active" id="base-tabs" role="tabpanel" aria-labelledby="base-tabs-tab">
+                     Home Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada lacus ullamcorper dui molestie, sit amet congue quam finibus.
+                  </div>
+                  <div class="tab-pane fade" id="quick-tabs" role="tabpanel" aria-labelledby="quick-tabs-tab">
+                    <div class="header-quick-content">
+                      <img src="../../dist/img/ES_QuickGuide.svg" />
+                      <p>An overview of basic functionality</p>
+                      <a href="#" class="btn btn-primary">View quick guide</a>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tour-tabs" role="tabpanel" aria-labelledby="tour-tabs-tab">
+                    <div class="header-tour-content">
+                      <img src="dist/img/ES_Tour.svg" />
+                      <p>Restart the guided tour</p>
+                      <a href="#" class="btn btn-primary">Restart tour</a>
+                    </div> 
+                  </div>
+                  <div class="tab-pane fade" id="videos-tabs" role="tabpanel" aria-labelledby="videos-tabs-tab">
+                    <div class="header-video-content">
+                      <img src="dist/img/ES_Videos.svg" />
+                      <p>A vast collection of introductory videos</p>
+                      <a href="#" class="btn btn-primary">View videos</a>
+                    </div> 
+                  </div>
+                  <div class="tab-pane fade" id="support-tabs" role="tabpanel" aria-labelledby="support-tabs-tab">
+                    Nulla lacinia, ex vitae gravida fermentum, lectus ipsum gravida arcu, id fermentum metus arcu vel metus. Curabitur eget sem eu risus tincidunt eleifend ac ornare magna.
+                  </div>
+                  <div class="tab-pane fade" id="live-tabs" role="tabpanel" aria-labelledby="live-tabs-tab">
+                    <div class="header-live-content">
+                      <img src="dist/img/LIVE_SUPPORT.svg" />
+                      <p>Live support is only available on Premium plans</p>
+                      <a href="#" class="btn btn-primary">Upgrade</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item mobile-none">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li class="nav-item dropdown mobile-none">
+          <a href="../../login.html" class="nav-link"><i class="fas fa-sign-out-alt"></i></a>
+        </li>
+        <li class="nav-item dropdown desktop-none">
+          <a href="../../login.html" class="nav-link">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>User</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">User Listing</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content user-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-primary">
+              <div class="card-header ">
+                <h3 class="card-title">User</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div class="card-tbl-head">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="btn-group">
+                        <a href="create.html" class="btn btn-primary">Add User</a>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-icon" data-toggle="dropdown" aria-expanded="false">
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu" role="menu" style="">
+                          <a class="dropdown-item" href="#">Import User(s)</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="table-responsive">
+                  <table id="example1" class="table table-striped table-hover user-table">
+                    <thead>
+                    <tr>
+                      <th>User</th>
+                      <th>Email</th>
+                      <th>User Type</th>
+                      <th>Registration</th>
+                      <th>Last login</th>
+                      <th>Option</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>John Doe</td>
+                      <td>developer@gmail.com </td>
+                      <td>Admin-Type  </td>
+                      <td>13/05/2021</td>
+                      <td>37 minutes ago</td>
+                      <td>
+                        <i class="fa fa-ellipsis-h"></i>
+                        <div class="hover-tbl-btn">
+                          <a href="#" class="tbl-btn tbl-signal" title="Reports"><i class="fas fa-signal"></i></a>
+                          <a href="#" class="tbl-btn tbl-logout" title="Log into account"><i class="fas fa-sign-out-alt"></i></a>
+                          <a href="#" class="tbl-btn tbl-pen" title="Edit"><i class="fas fa-pen"></i></a>
+                          <a href="#" class="tbl-btn tbl-close" title="Delete"><i class="fas fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>John Doe</td>
+                      <td>developer@gmail.com </td>
+                      <td>SuperAdmin  </td>
+                      <td>13/05/2021</td>
+                      <td>17/05/2021</td>
+                      <td>
+                        <i class="fa fa-ellipsis-h"></i>
+                        <div class="hover-tbl-btn">
+                          <a href="#" class="tbl-btn tbl-signal" title="Reports"><i class="fas fa-signal"></i></a>
+                          <a href="#" class="tbl-btn tbl-logout" title="Log into account"><i class="fas fa-sign-out-alt"></i></a>
+                          <a href="#" class="tbl-btn tbl-pen" title="Edit"><i class="fas fa-pen"></i></a>
+                          <a href="#" class="tbl-btn tbl-close" title="Delete"><i class="fas fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    </tfoot>
+                  </table>
+                </tbody>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="container">Copyright &copy; 2021. All rights reserved.</div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../../plugins/jszip/jszip.min.js"></script>
+<script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<script src="../../dist/js/local.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+</body>
+</html>
